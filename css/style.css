@@ -1,0 +1,293 @@
+body{
+	margin: 0;
+}
+
+
+/* This mixin is for generating CSS arrows on a box */
+
+.asset{
+	position: relative;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	font-size: medium;
+}
+
+.c-header {
+	width: 100%;
+	text-align: center;
+	font-size: calc(100% + 1vmin); 
+}
+.c-header h1 {
+	font-weight: 700;
+	color: #333; 
+}
+
+.c-box {
+	background: #1ed0bfed;
+	font-size: 100%;
+	text-align: center;
+	color: black;
+	-ms-flex-preferred-size: 30%;
+	flex-basis: 30%;
+	/*padding: 5vmin;*/
+	margin: 10%;
+	border: solid white 1px;
+}
+.c-box1 {
+	border-radius: 5px;
+	border: solid white 1px;
+}
+.c-box--arrow-top {
+	position: relative;
+	z-index: 10; 
+}
+.c-box--arrow-top::after {
+	content: '';
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	z-index: 10;
+	border: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	margin-left: -9px;
+	left: 50%;
+	border-bottom: 10px solid #1ed0bfed;
+	top: -10px; 
+}
+.myspan{
+	display: inline;
+	color: lightgrey;
+	font-size: 10px;
+	margin-left: 10px;
+}
+
+.myspan:nth-of-type(2){
+	margin-left: 0px;
+}
+.myspan:nth-of-type(3){
+	margin-left: 2px;
+}
+.myspan:nth-of-type(4){
+	margin-left: 42px;
+}
+
+
+.c-box--arrow-left {
+	position: relative;
+	z-index: 10; 
+}
+.c-box--arrow-left::after {
+	content: '';
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	z-index: 10;
+	border: 0;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	margin-top: -10px;
+	top: 65%;
+	border-right: 10px solid #1ed0bfed;
+	left: -10px; 
+}
+
+.c-footer {
+  width: 100%;
+  text-align: center; }
+
+.c-btn {
+  background: #d87517;
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding: .75em 1.5em .85em;
+  font-size: 120%;
+  line-height: 140%;
+  border-radius: 2px;
+  border: 3px solid #d87517;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: .2s all ease-out;
+  -o-transition: .2s all ease-out;
+  transition: .2s all ease-out; }
+  .c-btn:hover {
+    color: #d87517;
+    background: #fff;
+    -webkit-box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.2);
+    border: 3px solid #d87517; }
+
+
+
+
+
+
+
+#black_left{
+
+}
+
+#Layer_1{
+	/*max-width: 50vw;*/
+}
+
+#black_right{
+	width: 100%;
+    height: 100%;
+    border-radius: 10px;
+	background-color: #1e1f26;
+}
+
+#black_left{
+	width: 100%;
+    height: 100%;
+    border-radius: 10px;
+	background-color: #1e1f26;
+}
+
+span.span_block{
+	margin-left: 35%;
+	color: white;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+#black_right div{
+	padding: 1% 10% !important;
+}
+
+#black_right div span{
+	margin: 0% 10% !important;
+	font-size: 12px;
+	color: aliceblue;
+    font-family: cursive;
+}
+
+#black_left div input:nth-child(1){
+	margin-top: 5%;
+    margin-left: 8%;
+    margin-right: 1%;
+}
+
+#black_left div input:nth-child(3){
+	margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 1%;
+}
+
+
+
+#black_left div span{
+	font-size: 12px;
+	color: aliceblue;
+    font-family: cursive;
+}
+
+#select_type{
+	margin-left: 2% !important;
+	width: 30%;
+	background: lightgrey;
+	border-radius: 20px;
+}
+
+.slidecontainer {
+  width: 52%;
+  float: left;
+}
+
+.slidecontainer1 {
+  width: 60%;
+  float: left;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00ccff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00ccff;
+  cursor: pointer;
+}
+
+.myRange{
+	margin-left: 3% !important;
+}
+
+.cust-row{
+	margin-left: 8%;
+	margin-right: 3%;
+	margin-top: 3%;
+	
+}
+
+.cust-row span:nth-child(1){
+	margin-left: 8%;
+	margin-right: 3%;
+	float: left;
+}
+
+.cust-row span:nth-child(3){
+	margin-left: 2.5%;
+	margin-right: 0%;
+	background: white;
+	float: left;
+	border-radius: 5px;
+	color: black !important;
+	font-size: 5px;
+	padding: 1%;
+}
+
+.cust-row span:nth-child(4){
+	margin-left: 1%;
+	margin-right: 1%;
+	float: left;
+}
+
+.cust-row1{
+	margin-top: 0% !important;
+    padding-top: 10px
+}
+
+#wood {
+  z-index: 9;
+}
+
+#woodheader {
+  cursor: move;
+  z-index: 11;
+}
